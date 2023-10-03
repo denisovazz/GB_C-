@@ -16,5 +16,10 @@ int SumFrom1ToA(int a)
 }
 
 int number = ReadNumber("Введите число:");
+if (number >1)
+{
 int result = SumFrom1ToA(number);
-System.Console.WriteLine(result);
+System.Console.WriteLine(result);}
+else {
+    System.Console.WriteLine("Ошибка. введите число больше 1.");
+}
