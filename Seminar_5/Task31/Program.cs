@@ -11,7 +11,7 @@
 }
 
 
-int SumPozitiveElementsArray(int [] array)
+int SumPositiveElementsArray(int [] array)
 {
    int sum = 0;
 
@@ -46,7 +46,7 @@ const int RightBorder = 9;
 int [] myArray = GetRandomArray(Length, LeftBorder, RightBorder);
 string myArrayString = string.Join(", ", myArray);
 Console.WriteLine(myArrayString);
-int sumPositive = SumPozitiveElementsArray(myArray);
+int sumPositive = SumPositiveElementsArray(myArray);
 int sumNegative = SumNegativeElementArray(myArray);
 
 System.Console.WriteLine($"Сумма положительных элементов массива = {sumPositive}, отрицательных {sumNegative}");
