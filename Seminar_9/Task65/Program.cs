@@ -1,14 +1,20 @@
-﻿int n = 10;
-int m = 4;
-
-void  PrintNatural(int n, int m)
+﻿internal class Program
 {
-    if (m>n)
+    private static void Main(string[] args)
     {
-      return;
-    } 
-    PrintNatural(n-1, m);
-    System.Console.WriteLine(n);
-   
+        int n = 10;
+        int m = 4;
+
+        void PrintNatural(int n, int m)
+        {
+            if (m > n)
+            {
+                return;
+            }
+            PrintNatural(n - 1, m);
+            System.Console.WriteLine(n);
+
+        }
+        PrintNatural(n, m);
+    }
 }
-PrintNatural(n, m);
